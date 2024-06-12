@@ -1,8 +1,86 @@
-.display{
-    border: 1px solid black;
-    width: 100px;
-    font-size: 24px;
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f3f4f6;
+}
+
+.calculator {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    overflow: auto;
+    width: 320px;
+}
+
+.display {
+    background-color: #222;
+    color: #fff;
     text-align: right;
-    padding: 4px;
-    margin: 4px;
+    height: 60px;
+    padding: 20px;
+    font-size: 2em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.display .stored {
+    font-size: 0.5em;
+    opacity: 0.7;
+}
+
+.display .current {
+    margin-top: 10px;
+}
+
+.row {
+    display: flex;
+}
+
+.btn {
+    flex: 1;
+    padding: 20px;
+    font-size: 1.5em;
+    border: 1px solid #ddd;
+    outline: none;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #e0e0e0;
+}
+
+.btn:active {
+    background-color: #d0d0d0;
+}
+
+.equals, .divide, .multiply, .minus, .plus {
+    background-color: #ff9500;
+    color: #fff;
+}
+
+.equals:hover, .divide:hover, .multiply:hover, .minus:hover, .plus:hover {
+    background-color: #e08900;
+}
+
+.btn.equals:active {
+    background-color: #cc7a00;
+}
+
+.btn#Clear, .btn#Backspace {
+    background-color: #ff3b30;
+    color: #fff;
+}
+
+.btn#Clear:hover, .btn#Backspace:hover {
+    background-color: #e03227;
+}
+
+.btn#Clear:active, .btn#Backspace:active {
+    background-color: #cc2b22;
 }
