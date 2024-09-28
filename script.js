@@ -38,10 +38,10 @@ function operate(firstNo, secondNo, operation) {
 	}
 }
 
-function roundNumber(num) {
-    let rounded = Number(num.toFixed(7));
-    return rounded;
-}
+// function roundNumber(num) {
+//     let rounded = Number(num.toFixed(7));
+//     return rounded;
+// }
 
 let storedDisplay = document.querySelector(".stored");
 let currentDisplay = document.querySelector(".current");
